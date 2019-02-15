@@ -33,8 +33,44 @@ var currentTime = Date.now();
 // Moons arrays
 var JupyterMoons = [10];
 var SaturnMoons = [10];
-var UranusMoons = [27];
+var UranusMoons = [10];
 var NeptuneMoons = [10];
+var PlutoMoons = [5];
+var Asteroids = [200];
+var AsteX = [200];
+var AsteY = [200];
+var VelAst = [200];
+
+function RotateSate (moon_group, num_moon){
+
+    for (i = 0; i < num_moon; i++){
+
+        pos = (i*2)+Math.sqrt(50)+1
+
+        moon_group[i].position.x = -pos * Math.cos(tmoon/i);
+        moon_group[i].position.y = -pos * Math.sin(tmoon/i);
+    }
+}
+
+function RotateAste(){
+
+    var now = Date.now();
+    var deltat = now - currentTime;
+    currentTime = now;
+    var fract = deltat / duration;
+    var angle = 1;
+    
+    for (i = 0; i < 200; i++){
+
+        
+        Asteroids[i].position.x = -AsteX[i] * Math.cos(tmoon/VelAst[i]);
+        Asteroids[i].position.y = -AsteX[i] * Math.sin(tmoon/VelAst[i]);
+        
+        Asteroids[i].rotation.y += angle/VelAst[i];
+        Asteroids[i].rotation.x = -Math.PI/2;
+    
+    }
+}
 
 function animate() {
 
@@ -43,6 +79,7 @@ function animate() {
     currentTime = now;
     var fract = deltat / duration;
     var angle = Math.PI * 2 * fract * 5;
+    
 
     // Solar system pos
     Solar_system.rotation.x = Math.PI/2
@@ -102,13 +139,7 @@ function animate() {
 
     // JUPYTER MOONS   
 
-    for (i = 0; i < 10; i++){
-
-        pos = (i*2)+Math.sqrt(50)+1
-
-        JupyterMoons[i].position.x = -pos * Math.cos(tmoon/i);
-        JupyterMoons[i].position.y = -pos * Math.sin(tmoon/i);
-    }
+    RotateSate(JupyterMoons,10);
 
     // SATURNO
 
@@ -122,13 +153,7 @@ function animate() {
     
     // SATURN MOONS   
 
-    for (i = 0; i < 10; i++){
-
-        pos = (i*2)+Math.sqrt(50)+1
-
-        SaturnMoons[i].position.x = -pos * Math.cos(tmoon/i);
-        SaturnMoons[i].position.y = -pos * Math.sin(tmoon/i);
-    }
+    RotateSate(SaturnMoons, 10);
 
     // URANUS
     
@@ -141,13 +166,33 @@ function animate() {
 
     // URANUS MOONS
 
-    for (i = 0; i < 27; i++){
+    RotateSate(UranusMoons, 10)
 
-        pos = (i*2)+Math.sqrt(50)+1
+    // NEPTUNE 
+    tnept += 0.003
+    Neptune_group.position.x = -400 * Math.cos(tnept);
+    Neptune_group.position.y = -400 * Math.sin(tnept);
 
-        UranusMoons[i].position.x = -pos * Math.cos(tmoon/i);
-        UranusMoons[i].position.y = -pos * Math.sin(tmoon/i);
-    }
+    NeptuneMesh.rotation.y += angle;
+    NeptuneMesh.rotation.x = Math.PI/2;
+
+    // NEPTUNE MOONS
+
+    RotateSate(NeptuneMoons, 10);
+
+    // PLUTO
+
+    tplut += 0.002;
+    Pluto_group.position.x = -500* Math.cos(tplut);
+    Pluto_group.position.y = -500* Math.sin(tplut);
+
+    // PLUTO MOONS 
+
+    RotateSate(PlutoMoons, 5);
+
+    // ASTEOIDS
+
+    RotateAste();
 
 }
 
@@ -238,7 +283,6 @@ function createMoons(num_moons, size, moons, group){
         Moonpmesh.position.x = pos
 
         
-
         randnum = Math.floor(Math.random()*(6)+1);
         randsig = Math.floor(Math.random() * 2);
         if (randsig == 0){randnum *= -1}
@@ -249,6 +293,39 @@ function createMoons(num_moons, size, moons, group){
         group.add(moons[i]);
     }
 }
+
+function createAsteroids(num_asteroids){
+
+    for (i = 0; i < num_asteroids; i++){
+
+        AsteroidGeometry = new THREE.SphereGeometry(Math.sqrt(1.2), 50,50);
+        map = new THREE.TextureLoader().load("textures/asteroid/asteroidmap.jpg");
+        AsteroidMesh = new THREE.Mesh(AsteroidGeometry, new THREE.MeshPhongMaterial({map:map}));
+
+        posx = Math.floor(Math.random()*20)+60
+        posz = Math.floor(Math.random()*(6)+1);
+
+        randsig = Math.floor(Math.random() * 2);
+        randsig3 = Math.floor(Math.random() * 2);
+
+        if (randsig == 0){posx *= -1}
+        if (randsig3 == 0){posz *= -1}
+
+        AsteroidMesh.position.x = posx;
+        AsteroidMesh.position.z = posz;
+
+        Asteroids[i] = AsteroidMesh;
+        
+        AsteX[i] = Asteroids[i].position.x;
+
+        Solar_system.add(Asteroids[i]);
+
+        randnum = Math.floor(Math.random()*20)+20;
+        VelAst[i] = randnum;
+    }
+
+}
+
 
 function createPlanets(){
 
@@ -261,13 +338,15 @@ function createPlanets(){
     // MERCURY
     MercuryGeometry = new THREE.SphereGeometry(Math.sqrt(1), 50,50);
     map = new THREE.TextureLoader().load("textures/mercury/mercurymap.jpg");
-    Mercurymesh = new THREE.Mesh(MercuryGeometry, new THREE.MeshPhongMaterial({map:map}));
+    bumpMap = new THREE.TextureLoader().load("textures/mercury/mercurybump.png");
+    Mercurymesh = new THREE.Mesh(MercuryGeometry, new THREE.MeshPhongMaterial({map:map, bumpMap:bumpMap, bumpScale:0.1}));
     Mercurymesh.position.x = 15
 
     // VENUS
     VenusGeometry = new THREE.SphereGeometry(Math.sqrt(1.5), 50,50);
     map = new THREE.TextureLoader().load("textures/venus/venusmap.jpg");
-    Venusmesh = new THREE.Mesh(VenusGeometry, new THREE.MeshPhongMaterial({map:map}));
+    bumpMap = new THREE.TextureLoader().load("textures/venus/venusbump.jpg");
+    Venusmesh = new THREE.Mesh(VenusGeometry, new THREE.MeshPhongMaterial({map:map, bumpMap:bumpMap, bumpScale:0.1}));
     Venusmesh.position.x = 25
 
     // EARTH GROUP
@@ -277,7 +356,8 @@ function createPlanets(){
         // EARTH
         EarthGeometry = new THREE.SphereGeometry(Math.sqrt(2), 50, 50);
         map = new THREE.TextureLoader().load("textures/earth/earthmap.jpg");
-        Earthmesh = new THREE.Mesh(EarthGeometry, new THREE.MeshPhongMaterial({map:map}));
+        bumpMap = new THREE.TextureLoader().load("textures/earth/earthbump1k.jpg");
+        Earthmesh = new THREE.Mesh(EarthGeometry, new THREE.MeshPhongMaterial({map:map, bumpMap:bumpMap, bumpScale:0.1}));
         Earthmesh.position.x = 0
 
         Earth_group.add(Earthmesh);
@@ -285,7 +365,8 @@ function createPlanets(){
         // MOON 
         MoonGeometry = new THREE.SphereGeometry(Math.sqrt(0.4), 50, 50); 
         map = new THREE.TextureLoader().load("textures/earth/moonmap.jpg");
-        Moonmesh = new THREE.Mesh(MoonGeometry, new THREE.MeshPhongMaterial({map:map}));
+        bumpMap = new THREE.TextureLoader().load("textures/moon/bumpmap.jpg")
+        Moonmesh = new THREE.Mesh(MoonGeometry, new THREE.MeshPhongMaterial({map:map, bumpMap:bumpMap, bumpScale:0.1}));
         Moonmesh.position.x = 3
 
         Earth_group.add(Moonmesh);
@@ -293,7 +374,8 @@ function createPlanets(){
     // MARS
     MarsGeometry = new THREE.SphereGeometry(Math.sqrt(1.5), 50, 50);
     map = new THREE.TextureLoader().load("textures/mars/marsmap.jpg");
-    Marsmesh = new THREE.Mesh(MarsGeometry, new THREE.MeshPhongMaterial({map:map}));
+    bumpMap = new THREE.TextureLoader().load("textures/mars/marsbump1k.jpg")
+    Marsmesh = new THREE.Mesh(MarsGeometry, new THREE.MeshPhongMaterial({map:map, bumpMap:bumpMap, bumpScale:0.1}));
     Marsmesh.position.x = 45
 
     // JUPYTER GROUP 
@@ -303,7 +385,8 @@ function createPlanets(){
         // JUPYTER
         JupyterGeometry = new THREE.SphereGeometry(Math.sqrt(40), 50,50);
         map = new THREE.TextureLoader().load("textures/jupyter/jupyter.jpg");
-        Jupymesh = new THREE.Mesh(JupyterGeometry, new THREE.MeshPhongMaterial({map:map}));
+        bumpMap = new THREE.TextureLoader().load("textures/jupyter/bumpmap.jpg");
+        Jupymesh = new THREE.Mesh(JupyterGeometry, new THREE.MeshPhongMaterial({map:map, bumpMap:bumpMap, bumpScale:0.1}));
         Jupymesh.position.x = 0
 
         Jupyter_group.add(Jupymesh);
@@ -342,12 +425,13 @@ function createPlanets(){
         // URANUS
         UranusGeometry = new THREE.SphereGeometry(Math.sqrt(10), 50,50);
         map = new THREE.TextureLoader().load("textures/uranus/uranus.jpg");
+        bumpMap = new THREE.TextureLoader().load("textures/uranus/bumpmap.jpg");
         Uranusmesh = new THREE.Mesh(UranusGeometry, new THREE.MeshPhongMaterial({map:map}));
 
         Uranus_group.add(Uranusmesh);
 
         // MOONS
-        createMoons(27, Math.sqrt(10), UranusMoons, Uranus_group);
+        createMoons(10, Math.sqrt(10), UranusMoons, Uranus_group);
 
 
     // NEPTUNE GROUP
@@ -361,6 +445,29 @@ function createPlanets(){
 
         Neptune_group.add(NeptuneMesh);
 
+        // MOONS 
+
+        createMoons(10, Math.sqrt(10), NeptuneMoons, Neptune_group);
+
+    // PLUTO GROUP 
+    Pluto_group = new THREE.Object3D;
+    Pluto_group.position.x = 500;
+
+        // PLUTO 
+        PlutoGeometry = new THREE.SphereGeometry(Math.sqrt(1), 50,50);
+        map = new THREE.TextureLoader().load("textures/pluto/plutomap.jpg");
+        PlutoMesh = new THREE.Mesh(PlutoGeometry, new THREE.MeshPhongMaterial({map:map}));
+
+        Pluto_group.add(PlutoMesh);
+
+        // MOONS 
+
+        createMoons(5, Math.sqrt(1), PlutoMoons, Pluto_group);
+
+    // ASTEROIDS
+
+    createAsteroids(200);
+
     // Add the mesh to the group
     Solar_system.add(Sunmesh);
     Solar_system.add(Mercurymesh);
@@ -371,6 +478,7 @@ function createPlanets(){
     Solar_system.add(Saturno_group);
     Solar_system.add(Uranus_group);
     Solar_system.add(Neptune_group);
+    Solar_system.add(Pluto_group);
 
 }
 

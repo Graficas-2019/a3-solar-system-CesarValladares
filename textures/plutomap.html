@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en" class=" is-mobile-first">
+<head>
+    <!-- Critical path meta tags only -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Entry #11 by alexry for Design a 4K Pluto Texture | Freelancer</title>
+    <link rel="preconnect" href="//www.f-cdn.com" crossorigin>
+    <link rel="dns-prefetch" href="//cdn2.f-cdn.com">
+    <link rel="dns-prefetch" href="//cdn3.f-cdn.com">
+    <link rel="dns-prefetch" href="//cdn4.f-cdn.com">
+    <link rel="dns-prefetch" href="//cdn5.f-cdn.com">
+    <link rel="dns-prefetch" href="//cdn6.f-cdn.com">
+
+    <!-- Google Experiment. ga_exp.js is special, don't include any script in the head! -->
+    
+    <!-- Prevent FOUC by hiding the body. This is similar to ng-cloak however not all layouts have angularjs-yet -->
+    <style type="text/css">
+        .no-fouc { display: none;}
+    </style>
+    <script type="text/javascript">
+        document.documentElement.classList.add('no-fouc');
+    </script>
+
+    <!-- Disable the Google Content Experiements when a "no_abtest=true"
+    cookie is present. Useful for automated/scripted tests -->
+    <!-- The _gaUserPrefs thing comes from reverse-engineering the Google
+    opt-out browser plugin. It's undocumented but should be stable enough as
+    changing it would require Google to update all its opt-out plugins. -->
+    <script>
+      if (document.cookie.indexOf('no_abtest=true') !== -1) {
+        window["_gaUserPrefs"] = { ioo : function() { return true; } };
+      }
+    </script>
+
+    <!-- Google Analytics Content Experiment code -->
+    <script>function utmx_section(){}function utmx(){}(function(){var
+    k='294858-566',d=document,l=d.location,c=d.cookie;
+    if(l.search.indexOf('utm_expid='+k)>0)return;
+    function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+    indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+    length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+    '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+    '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+    '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+    valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+    '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+    </script><script>utmx('url','A/B');</script>
+    <!-- End of Google Analytics Content Experiment code -->
+
+    <!--  "Unhide" afterwards.  -->
+    <script>
+        document.documentElement.classList.remove('no-fouc');
+    </script>
+
+
+
+    <!-- Font face handling for an FOFT rendering approach -->
+    <style>
+        @font-face {
+          font-family: 'RobotoSubset';
+          font-weight: normal;
+          font-style: normal;
+          src: url('/static/css/fonts/roboto-regular/Roboto-regular.eot');
+          src: url('/static/css/fonts/roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.woff2') format('woff2'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.woff') format('woff'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.ttf') format('truetype'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.svg#Roboto') format('svg');
+        }
+
+        @font-face {
+          font-family: 'Roboto';
+          font-weight: normal;
+          font-style: normal;
+          src: url('/static/css/fonts/roboto-regular/Roboto-regular.eot');
+          src: url('/static/css/fonts/roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.woff2') format('woff2'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.woff') format('woff'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.ttf') format('truetype'),
+               url('/static/css/fonts/roboto-regular/Roboto-regular.svg#Roboto') format('svg');
+        }
+        @font-face {
+          font-family: 'Roboto';
+          font-weight: normal;
+          font-style: italic;
+          src: url('/static/css/fonts/roboto-italic/Roboto-italic.eot');
+          src: url('/static/css/fonts/roboto-italic/Roboto-italic.eot?#iefix') format('embedded-opentype'),
+               url('/static/css/fonts/roboto-italic/Roboto-italic.woff2') format('woff2'),
+               url('/static/css/fonts/roboto-italic/Roboto-italic.woff') format('woff'),
+               url('/static/css/fonts/roboto-italic/Roboto-italic.ttf') format('truetype'),
+               url('/static/css/fonts/roboto-italic/Roboto-italic.svg#Roboto') format('svg');
+        }
+        @font-face {
+          font-family: 'Roboto';
+          font-weight: bold;
+          font-style: normal;
+          src: url('/static/css/fonts/roboto-bold/Roboto-700.eot');
+          src: url('/static/css/fonts/roboto-bold/Roboto-700.eot?#iefix') format('embedded-opentype'),
+               url('/static/css/fonts/roboto-bold/Roboto-700.woff2') format('woff2'),
+               url('/static/css/fonts/roboto-bold/Roboto-700.woff') format('woff'),
+               url('/static/css/fonts/roboto-bold/Roboto-700.ttf') format('truetype'),
+               url('/static/css/fonts/roboto-bold/Roboto-700.svg#Roboto') format('svg');
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-style: normal;
+            src: url('/static/css/fonts/roboto-light/Roboto-light.eot');
+            src: url('/static/css/fonts/roboto-light/Roboto-light.eot?#iefix') format('embedded-opentype'),
+                url('/static/css/fonts/roboto-light/Roboto-light.woff2') format('woff2'),
+                url('/static/css/fonts/roboto-light/Roboto-light.woff') format('woff'),
+                url('/static/css/fonts/roboto-light/Roboto-light.ttf') format('truetype'),
+                url('/static/css/fonts/roboto-light/Roboto-light.svg#robotolight') format('svg');
+        }
+
+        /* Prevent FOIT */
+        .is-webfont-not-loaded body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        .is-webfont-subset body {
+            font-family: 'RobotoSubset', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+    </style>
+
+    <script>
+    (function() {
+        (function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
+
+(function(){function m(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function n(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function l(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",l),a()})};function t(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+function x(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=l;y(a)&&a.a.parentNode&&b(a.g)}var l=a;m(a.b,c);m(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,C=null,E=null,F=null;function I(){if(null===E){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}E=""!==a.style.font}return E}function J(a,b){return[a.style,a.weight,I()?a.stretch:"","100px",b].join(" ")}
+A.prototype.load=function(a,b){var c=this,l=a||"BESbswy",r=0,D=b||3E3,G=(new Date).getTime();return new Promise(function(a,b){var e;null===F&&(F=!!document.fonts);if(e=F)null===C&&(C=/OS X.*Version\/10\..*Safari/.test(navigator.userAgent)&&/Apple/.test(navigator.vendor)),e=!C;if(e){e=new Promise(function(a,b){function f(){(new Date).getTime()-G>=D?b():document.fonts.load(J(c,'"'+c.family+'"'),l).then(function(c){1<=c.length?a():setTimeout(f,25)},function(){b()})}f()});var K=new Promise(function(a,
+c){r=setTimeout(c,D)});Promise.race([K,e]).then(function(){clearTimeout(r);a(c)},function(){b(c)})}else n(function(){function e(){var b;if(b=-1!=g&&-1!=h||-1!=g&&-1!=k||-1!=h&&-1!=k)(b=g!=h&&g!=k&&h!=k)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(g==u&&h==u&&k==u||g==v&&h==v&&k==v||g==w&&h==w&&k==w)),b=!b;b&&(d.parentNode&&d.parentNode.removeChild(d),clearTimeout(r),a(c))}
+function H(){if((new Date).getTime()-G>=D)d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)g=f.a.offsetWidth,h=p.a.offsetWidth,k=q.a.offsetWidth,e();r=setTimeout(H,50)}}var f=new t(l),p=new t(l),q=new t(l),g=-1,h=-1,k=-1,u=-1,v=-1,w=-1,d=document.createElement("div");d.dir="ltr";x(f,J(c,"sans-serif"));x(p,J(c,"serif"));x(q,J(c,"monospace"));d.appendChild(f.a);d.appendChild(p.a);d.appendChild(q.a);document.body.appendChild(d);u=f.a.offsetWidth;v=p.a.offsetWidth;
+w=q.a.offsetWidth;H();z(f,function(a){g=a;e()});x(f,J(c,'"'+c.family+'",sans-serif'));z(p,function(a){h=a;e()});x(p,J(c,'"'+c.family+'",serif'));z(q,function(a){k=a;e()});x(q,J(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
+
+        var root = document.documentElement;
+        root.classList.add('is-webfont-not-loaded');
+        var fontSubset = new FontFaceObserver('RobotoSubset');
+        var fontNormal = new FontFaceObserver('Roboto');
+        var fontBold = new FontFaceObserver('Roboto', { weight: 700 });
+        var fontItalic = new FontFaceObserver('Roboto', { style: 'italic' });
+        fontSubset.load(null, 10000).then(function () {
+            root.classList.remove('is-webfont-not-loaded');
+            root.classList.add('is-webfont-subset');
+            Promise.all([fontNormal.load(null, 30000), fontBold.load(null, 30000), fontItalic.load(null, 30000)])
+                .then(function () {
+                    root.classList.remove('is-webfont-subset');
+                });
+        });
+    })();
+    </script>
+
+
+    <!-- FIXME: all these globals should be replaced by server-data -->
+    <script>
+        window._t = [];
+        window._lt = [];
+        window._ttref = [];
+        _ttref.push(['_setCookie']);
+    </script>
+
+    <style>
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
+
+    
+
+    
+    <!-- Render-blocking styles -->
+    
+        <link href="https://www.f-cdn.com/assets/css/flux/base-a509398f.css" type="text/css" rel="stylesheet" />
+    
+        <link href="https://www.f-cdn.com/assets/css/flux/layout/PageContestFullView-cbb2c3b2.css" type="text/css" rel="stylesheet" />
+    
+
+    <link rel="stylesheet" href="https://www.f-cdn.com/assets/webapp-compat/styles.adb73f039d6d8ac745b5.css">
+    
+
+
+    <meta name="description" content="This is entry #11 by alexry  in a crowdsourcing contest Design a 4K Pluto Texture for $50.00 posted on Freelancer!"/>
+    
+
+    <meta property="og:title" content="Check out alexry&#039;s entry in $50.00 USDcontest Design a 4K Pluto Texture on Freelancer.com"/>
+    <meta property="og:description" content="This is entry #11 by alexry  in a crowdsourcing contest Design a 4K Pluto Texture for $50.00 posted on Freelancer!"/>
+    
+      <meta property="og:image" content="https://cdn2.f-cdn.com/contestentries/174787/13168736/55056c18a4a69_thumb900.jpg"/>
+    
+    
+
+    
+
+    <meta name="robots" content="index, follow"/>
+    
+    
+    <meta name="verify-v1" content="TTmFSxUJxXuHsKl9kPGeYetHBfsjnO7s87WxaAha8NE="/>
+    <meta name="verify-v1" content="9ejzgFxg7wuxHdyyiqmdTe3JQgBUfIVvdJiXlVRHkEw="/>
+    <meta name="google-site-verification" content="Os01EUjriD5LgZ5VHZqf23SGdeCX-7g7dsi-8ekNBdk"/>
+    <meta name="google-site-verification" content="Xi9iryvGIjCbFdxBx5GjqMprKdhYIrOeKAgCSS_GEEs"/>
+    <meta name="google-site-verification" content="aUe2esuVVPvwLu9u_15cbwtL8CSU8cMP9ZtDNE_SNh8"/>
+    <meta name="google-site-verification" content="sPE5PAZlRuPYrymfB5FcOI7pq3dg9By1OVoH48jKvH8" />
+    <meta name="google-site-verification" content="blpbKwfjw3TUdN5_daIUVWTIhFknZKMNUxkp5_QxXPk" />
+    <meta name="alexaVerifyID" content="lOECm39vgYv4N9PwoW6nsSSLiUw"/>
+    <meta name="y_key" content="145378928393bc8d"/>
+    <meta name="msvalidate.01" content="756854B52F963132E377E441F92F1136"/>
+    <meta property="fb:admins" content="100000662403967"/>
+    <meta name="robots" content="noodp"/>
+
+    
+    
+
+    <meta property="og:type" content="object">
+
+<meta property="og:site_name" content="Freelancer">
+<meta property="og:url" content="https://www.freelancer.ca/contest/Design-a-K-Pluto-Texture-174787-byentry-5115878.html">
+<meta property="fb:app_id" content="120131118061981">
+
+    
+
+    
+
+<link href="https://www.freelancer.ca/rss.xml" rel="alternate" type="application/rss+xml" title="Latest projects" >
+
+
+
+    <link rel="publisher" href="http://plus.google.com/+Freelancer"/>
+    
+    <link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Freelancer.com"/>
+
+    
+
+            <link rel="icon" href="https://www.freelancer.ca/favicon.ico" type="image/ico"/>
+    <link rel="shortcut icon" href="https://www.freelancer.ca/favicon.ico"/>
+        
+
+    
+        <link rel="alternate" hreflang="x-default" href="https://www.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en" href="https://www.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-AU" href="https://www.freelancer.com.au&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-NZ" href="https://www.freelancer.co.nz&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-GB" href="https://www.freelancer.co.uk&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="zh" href="https://www.freelancer.hk&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="zh-HK" href="https://www.freelancer.hk&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-SG" href="https://www.freelancer.sg&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-PH" href="https://www.freelancer.ph&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="de" href="https://www.freelancer.de&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="de-DE" href="https://www.freelancer.de&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-CA" href="https://www.freelancer.ca&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-ZA" href="https://www.freelancer.co.za&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-IN" href="https://www.freelancer.in&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-JM" href="https://www.freelancer.com.jm&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="es" href="https://www.freelancer.es&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="es-ES" href="https://www.freelancer.es&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="es-MX" href="https://www.freelancer.mx&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="es-PE" href="https://www.freelancer.com.pe&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="es-EC" href="https://www.freelancer.ec&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="es-CL" href="https://www.freelancer.cl&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-PK" href="https://www.freelancer.pk&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="id" href="https://www.freelancer.co.id&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="id-ID" href="https://www.freelancer.co.id&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-BD" href="https://www.freelancer.com.bd&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="es-UY" href="https://www.freelancer.uy&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="pt" href="https://www.freelancer.pt&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="pt-PT" href="https://www.freelancer.pt&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ro" href="https://www.freelancer.co.ro&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ro-RO" href="https://www.freelancer.co.ro&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ru" href="https://www.freelancer.com.ru&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ru-RU" href="https://www.freelancer.com.ru&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="zh-CN" href="https://www.freelancer.cn&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ja" href="https://www.freelancer.jp&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ja-JP" href="https://www.freelancer.jp&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="el" href="https://www.freelancer.gr&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="el-GR" href="https://www.freelancer.gr&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-IS" href="https://www.freelancer.is&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="th" href="https://www.freelancer.co.th&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="th-TH" href="https://www.freelancer.co.th&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="cs" href="https://www.freelancer.cz&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="cs-CZ" href="https://www.freelancer.cz&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="pt-BR" href="https://www.br.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="es-AR" href="https://www.freelancer.com.ar&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="es-CO" href="https://www.freelancer.com.co&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="pl" href="https://www.freelancer.pl&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="pl-PL" href="https://www.freelancer.pl&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="uk" href="https://www.freelancer.com.ua&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="uk-UA" href="https://www.freelancer.com.ua&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="nb" href="https://www.freelancer.no&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="nb-NO" href="https://www.freelancer.no&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ko" href="https://www.freelancer.co.kr&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ko-KR" href="https://www.freelancer.co.kr&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="en-IE" href="https://www.freelancer.ie&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="fr" href="https://www.fr.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="fr-FR" href="https://www.fr.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="it" href="https://www.freelancer.co.it&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="it-IT" href="https://www.freelancer.co.it&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="sl" href="https://www.freelancer.si&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="sl-SI" href="https://www.freelancer.si&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="sv" href="https://www.freelancer.se&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="sv-SE" href="https://www.freelancer.se&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="fi" href="https://www.fi.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="fi-FI" href="https://www.fi.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="da" href="https://www.dk.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="da-DK" href="https://www.dk.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ms" href="https://www.my.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="ms-MY" href="https://www.my.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="tr" href="https://www.tr.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="tr-TR" href="https://www.tr.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="vi" href="https://www.vn.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="vi-VN" href="https://www.vn.freelancer.com&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="sw" href="https://www.freelancer.co.ke&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="sw-KE" href="https://www.freelancer.co.ke&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="sq" href="https://www.freelancer.com.al&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="sq-AL" href="https://www.freelancer.com.al&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="hu" href="https://www.freelancer.hu&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/><link rel="alternate" hreflang="hu-HU" href="https://www.freelancer.hu&#x2F;contest&#x2F;Design-a-K-Pluto-Texture-174787-byentry-5115878"/>
+    
+    
+    <link rel="canonical" href="/contest/Design-a-K-Pluto-Texture-174787-byentry-5115878.html"/>
+    
+
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "Freelancer",
+        "url": "http://www.freelancer.com/",
+        "logo": "http://www.freelancer.com/static/css/images/logo.jpg",
+        "sameAs" : [
+        "https://twitter.com/freelancer",
+        "https://www.facebook.com/fansoffreelancer",
+        "https://www.linkedin.com/company/freelancer-com",
+        "https://plus.google.com/+Freelancer/posts",
+        "https://instagram.com/freelancerofficial"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Freelancer",
+        "url": "https://www.freelancer.com"
+    }
+    </script>
+
+</head>
+<body data-role="page">
+
+    
+
+    
+
+    <div class="pinky-template">
+        
+
+        
+
+                          
+
+        
+
+
+<header class="fl-header" data-target="primary-header-container">
+    <div class="primary-navigation-section"
+    data-target="primary-header" fl-analytics-section="DaVinciNavigation">
+        <div class="navigation-section-inner">
+
+            <!-- Header left hand side container -->
+            <div>
+                <!-- Logo container-->
+                <div class="fl-logo-container">
+                    <a class="fl-logo" href="/"
+                        fl-analytics="PrimaryLogo">
+                                                                                    <img class="flicon-logo-fullcolor"
+                                    src="https://www.f-cdn.com/assets/img/fl-logo-c555380d.svg"
+                                    alt="Freelancer Logo"
+                                >
+                                                                        </a>
+                </div>
+
+                
+                
+                
+                <!-- Primary nav (logged out) -->
+
+                <nav class="primary-navigation">
+                    <ul class="primary-navigation-list">
+                                                <li>
+                            <a class="primary-navigation-link primary-navigation-link--noSubNav" href="/info/how-it-works">
+                                How It Works                            </a>
+                        </li>
+                                                <li>
+                            <a class="primary-navigation-link primary-navigation-link--noSubNav" href="/jobs/">
+                                Browse Jobs                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                
+                
+                            </div>
+
+            
+            <!-- Login section -->
+
+            <div class="LoginSection">
+                
+                                                        
+                    
+                    
+                    
+                                                                <fl-login-signup-angular fl-translation-crawler
+                            show-login-button="true"
+                            show-signup-button="true"
+                        ></fl-login-signup-angular>
+                                    
+                
+                    
+                        <a id="header-post-project" href="/post-project" data-uitest-target="header-post-project"
+                           class="btn btn-small LoginSection-btnPost
+                            
+                                btn-primary
+                            
+                            "
+                            fl-analytics="PostAProjectButton"
+                            data-qtsb-section="NavBar"
+                            data-qtsb-label="GoToPostProject">
+
+                            Post a Project
+                        </a>
+                    
+                    
+                                            <!-- ABTest: T58952 -->
+                        <div id="text-to-post" class="LoginSection-textToPost
+                            "
+                            data-uitest-target="text-to-post">
+                        </div>
+                        
+                        
+                    
+                
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Secondary nav (logged out) -->
+
+    
+</header>
+
+
+
+
+
+    </div>
+    
+
+    <!-- Webapp compat loader. Dynamically load & bootstrap webapp Angular
+    components onto server-side pages. Yes, it's awesome -->
+    <script>
+    window.webappCompat = {};
+            window.webappCompat['tracking'] = {};
+                    window.webappCompat['modals'] = {};
+                    window.webappCompat['abtest'] = {};
+                    window.webappCompat['threatmetrix'] = {};
+            </script>
+
+<style>
+                                                                                    </style>
+            <webapp-compat-tracking class="WebappCompatPlaceholder"></webapp-compat-tracking>
+                <webapp-compat-modals class="WebappCompatPlaceholder"></webapp-compat-modals>
+                <webapp-compat-abtest class="WebappCompatPlaceholder"></webapp-compat-abtest>
+                <webapp-compat-threatmetrix class="WebappCompatPlaceholder"></webapp-compat-threatmetrix>
+    <webapp-compat></webapp-compat>
+
+
+    <div class="pinky-template">
+        <main id="main" class="main-content">
+        
+          <div class="PageContestFullView">
+    <div class="ProjectHeader PageContestFullView-projectHeader">
+        <header class="ProjectHeader-container">
+            <div class="ProjectHeader-inner">
+                <div class="ProjectHeader-row">
+                    <nav class="ProjectHeader-breadcrumbs Breadcrumbs">
+                        <ul class="Breadcrumbs-list">
+                            <li class="Breadcrumbs-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                <a href="/" class="Breadcrumbs-link" itemprop="url">
+                                    <span itemprop="title">Home</span>
+                                </a>
+                            </li>
+                            <li class="Breadcrumbs-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                <a href="/contest" class="Breadcrumbs-link" itemprop="url">
+                                    <span itemprop="title">Contest</span>
+                                </a>
+                            </li>
+                            <li class="Breadcrumbs-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                <a href="/contest/Design-a-K-Pluto-Texture-174787.html" class="Breadcrumbs-link" itemprop="url">
+                                    <span itemprop="title">Design a 4K Pluto Texture</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="ProjectHeader-row">
+                    <h1 class="ProjectHeader-title" title="Design a 4K Pluto Texture"><a href="/contest/Design-a-K-Pluto-Texture-174787.html" class="PageContestFullView-header">Design a 4K Pluto Texture</a></h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="Container">
+        <div class="PageContestFullView-container">
+            <section class="PageContestFullView-navInfo Grid Grid--verticalCenter">
+                <div class="Grid-col Grid-col--6 Grid-col--desktopLarge-2 Grid-col--desktopSmall-2 Grid-col--tablet-4">
+                    <span class="PageContestFullView-navInfo-name">Freelancer: <strong><a id="view-entries-link" href="/u/alexry">alexry</a></strong></span>
+                </div>
+                <div id="rating-container" class="PageContestFullView-navInfo-rating Grid-col Grid-col--flexContainer Grid-col--2 Grid-col--desktopLarge-1 Grid-col--desktopSmall-1 Grid-col--tablet-1 ">
+                    
+                    
+                        <div id="entry-rating" class="Rating"
+                             data-star_rating="3.0">
+                            <span class="Rating-total">
+                                <span class="Rating-progress"></span>
+                            </span>
+                        </div>
+                    
+                </div>
+                <div class="PageContestFullView-navInfo-share Grid-col Grid-col--1">
+                    <ul class="Endorse PageContestFullView-navInfo-endorse Grid--horizontalCenter Grid-col--flexContainer">
+                        <li class="Endorse-item">
+                            <a id="entry-likes-icon" class="Endorse-itemLink-like
+                                
+                                Endorse-itemLink
+                                Endorse-itemLink-heartIcon
+                                Endorse-itemLink-heartIcon--alt
+                                Endorse-itemLink--default
+                                
+                                    
+                                    contest_entry-not-liked
+                                "
+                                
+                            >
+                                <span id="entry-likes">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" PageContestFullView-navInfo-share Grid-col Grid-col--2">
+                    <div class="SocialShare PageContestFullView-socialShare">
+                        <div id="social-media-share" class="SocialShare-buttonGroup PageContestFullView-buttonGroup">
+                            Share:
+                            <a class="fl-social-media-icon SocialShare-icon
+                            PageContestFullView-socialShare-icon
+                            PageContestFullView-socialShare-icon--facebook SocialShare-icon--facebook"
+                                href="http://www.facebook.com/share.php?u=https%3A%2F%2Fwww.freelancer.ca%2Fcontest%2FDesign-a-K-Pluto-Texture-174787-byentry-5115878.html"
+                                title="Share on Facebook"
+                                data-social="social-share-button"
+                                data-channel="fb"
+                                id="share-fb-sidebar">
+                                    <span class="Icon Icon--small
+                                        PageContestFullView-socialShare-icon-group">
+                                        <svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M16.41 8.65h-3v-2a.8.8 0 0 1 .84-.91h2.12V2.51h-2.93a3.7 3.7 0 0 0-4 4v2.14H7.59V12h1.87v9.5h3.95V12h2.66l.34-3.35z"/>
+</svg>
+
+                                    </span>
+                            </a>
+                            <a class="fl-social-media-icon SocialShare-icon
+                            PageContestFullView-socialShare-icon
+                            PageContestFullView-socialShare-icon--twitter SocialShare-icon--twitter"
+                                href="http://twitter.com/intent/tweet?text=Check%20out%20alexry%27s%20entry%20in%20%2450.00%20USDcontest%20Design%20a%204K%20Pluto%20Texture%20on%20Freelancer.com https%3A%2F%2Fwww.freelancer.ca%2Fcontest%2FDesign-a-K-Pluto-Texture-174787-byentry-5115878.html"
+                                title="Share on Twitter"
+                                data-social="social-share-button"
+                                data-channel="tw"
+                                id="share-tw-sidebar">
+                                    <span class="Icon Icon--small
+                                        PageContestFullView-socialShare-icon-group">
+                                        <svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.192 21c-2.28 0-4.404-.668-6.192-1.815 2.144.252 4.282-.342 5.98-1.672-1.768-.034-3.26-1.202-3.772-2.806.633.12 1.256.085 1.823-.07-1.942-.39-3.282-2.14-3.24-4.01.545.302 1.17.484 1.83.505C2.822 9.93 2.313 7.555 3.37 5.738c1.992 2.444 4.97 4.053 8.326 4.22C11.106 7.434 13.024 5 15.63 5c1.163 0 2.212.49 2.95 1.276.92-.18 1.785-.517 2.565-.98-.3.944-.942 1.736-1.775 2.235.817-.097 1.596-.314 2.32-.635-.542.807-1.228 1.52-2.016 2.088C19.93 14.665 15.694 21 8.192 21z"/></svg>
+
+                                    </span>
+                            </a>
+                            <a class="fl-social-media-icon SocialShare-icon
+                            PageContestFullView-socialShare-icon
+                            PageContestFullView-socialShare-icon--linkedin SocialShare-icon--linkedin"
+                                href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.freelancer.ca%2Fcontest%2FDesign-a-K-Pluto-Texture-174787-byentry-5115878.html&amp;title=Check%20out%20alexry%27s%20entry%20in%20%2450.00%20USDcontest%20Design%20a%204K%20Pluto%20Texture%20on%20Freelancer.com&amp;summary=This%20is%20entry%20%2311%20by%20alexry%20%20in%20a%20crowdsourcing%20contest%20Design%20a%204K%20Pluto%20Texture%20for%20%2450.00%20posted%20on%20Freelancer%21"
+                                title="Share on LinkedIn"
+                                data-social="social-share-button"
+                                data-channel="in"
+                                id="share-in-sidebar">
+                                    <span class="Icon Icon--small
+                                        PageContestFullView-socialShare-icon-group">
+                                        <svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2.48 0c1.023-.016 1.954.587 2.357 1.528.402.94.197 2.03-.52 2.76-.718.728-1.805.95-2.752.564C.62 4.464 0 3.542 0 2.52 0 1.144 1.104.022 2.48 0zM.33 20.96h4.36v-14H.33v14zm14.04-10.5c-2.26 0-2.61 1.77-2.61 3.6v6.9H7.42v-14h4.16v1.91h.07c.846-1.456 2.427-2.325 4.11-2.26 4.41 0 5.22 2.9 5.22 6.67v7.68h-4.34v-6.81c0-1.62 0-3.71-2.26-3.71l-.01.02z" fill-rule="evenodd"/></svg>
+
+                                    </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="report-entry-container" class="PageContestFullView-navInfo-report Grid-col Grid-col--1">
+                    <a id="report-entry" href="#" class=" hide">Report Entry</a>
+                </div>
+                <div class="PageContestFullView-navInfo-actions Grid-col Grid-col--3 Grid-col--desktopLarge-4 Grid-col--desktopSmall-4 Grid-col--tablet-5 Grid-col--flushRight">
+                    <div id="entry-actions" class="PageContestFullView-navInfo-awardReject ">
+                        <div class="PageContestFullView-entryDetails-action">
+                            <span id="reject-action" class="PageContestFullView-entryDetails-reject
+                            hide"><a>Reject Entry</a></span>
+                            <span id="award-action" class="PageContestFullView-entryDetails-award
+                            hide">
+                                <a id="award-link" class="btn btn-success btn-small">Award Entry</a>
+                            </span>
+                            <span id="buy-action" class="hide">
+                                <a id="buy-link" class="btn btn-success btn-small">
+                                    Buy Entry for $50 USD
+                                </a>
+                            </span>
+                        </div>
+                        <div class="PageContestFullView-entryDetailsHeading-status">
+                            <div id="winner-text" class="PageContestFullView-entryDetailsHeading-status-winner
+                                hide">
+                                Winner
+                            </div>
+                            <div id="runner-up-text" class="PageContestFullView-entryDetailsHeading-status-runnerUp
+                                hide">
+                                Runner Up
+                            </div>
+                        </div>
+                    </div>
+                    <div class="PageContestFullView-navInfo-post">
+                        <img id="preloader" src="https://www.f-cdn.com/assets/css/images/pending-af15b715.gif" class="hide buttons-preloader" data-target="preloader" alt="Processing..."/>
+                        
+                            <div class="PageContestFullView-entryDetailsHeading-cta">
+                            
+                                <a data-selector="repost" href="/contest/create.php?from=ContestRepost&contestId=174787"
+                                class="btn btn-primary PageContestFullView-entryDetailsHeading-btn">Post a Contest like this!</a>
+                            
+                            
+                        
+                    </div>
+                    <div id="rejected-state" class="Grid-col hide">
+                        <span>Rejected</span>
+                        <span>
+                            <a id="reconsider-action" class="btn btn-success hide">Reconsider</a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="PageContestFullView-entryDetails Grid">
+                <div class="PageContestFullView-entryDetailsHeading Grid-col Grid-col--12 Grid-col--tablet-12">
+                    <div class="PageContestFullView-entryDetailsHeading-titleDesc">
+                        <h2 id="entry-title" class="PageContestFullView-entryDetailsHeading-title">pluto</h2>
+                        <p id="entry-description" class="PageContestFullView-entryDetailsHeading-desc">check pls</p>
+                    </div>
+                    <div class="PageContestFullView-entryDetailsHeading-cta">
+                        
+                            <a data-selector="repost" href="/contest/create.php?from=ContestRepost&contestId=174787"
+                            class="btn btn-primary PageContestFullView-entryDetailsHeading-btn">Post a Contest like this!</a>
+                        
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="PageContestFullView-entryImages">
+                <div id="entry-container" class="PageContestFullView-entryImages-container
+                    
+                    ">
+                    
+                        <figure class="PageContestFullView-entryImages-figure">
+                            <img class="PageContestFullView-entryImages-image"
+                                src="https://cdn2.f-cdn.com/contestentries/174787/13168736/55056c18a4a69_thumb900.jpg"
+                                alt="Contest Entry #11 for Design a 4K Pluto Texture">
+                        </figure>
+                    
+                    
+                    
+                </div>
+                <div id="qv-spinner" class="PageContestFullView-loaderBackground is-hidden">
+                    <div class="Loader Loader--full PageContestFullView--loader"></div>
+                </div>
+             </section>
+
+            <section class="PageContestFullView-entryImages PageContestFullView-entryImages-carousel">
+                <div class="PageContestFullView-carousel-container">
+                    <div id="thumbnail-carousel" class="PageContestFullView-carousel-slides">
+                        
+                            <div class="PageContestFullView-carousel-item">
+                                <figure class="PageContestFullView-carousel-figure">
+                                    <img class="PageContestFullView-carousel-image"
+                                        src="https://cdn6.f-cdn.com/contestentries/174787/13168736/55056c18a4a69_thumb80.jpg"
+                                        data-image="https://cdn2.f-cdn.com/contestentries/174787/13168736/55056c18a4a69_thumb900.jpg"
+                                        alt="Contest Entry #11 thumbnail for Design a 4K Pluto Texture">
+                                </figure>
+                            </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <div class="PageContestFullView-entryNav Grid">
+                <div class="PageContestFullView-entryNav-prev Grid-col Grid-col--5">
+                    <a href="/contest/Design-a-K-Pluto-Texture-174787-byentry-5109332.html" id="prev-entry"
+                        class="PageContestFullView-entryNav-link
+                        ">
+                        <span class="Icon">
+                            <svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M22 11H6.414l2.293-2.293-1.414-1.414L2.586 12l4.707 4.706 1.414-1.413L6.414 13H22"/>
+</svg>
+
+                        </span> Previous
+                    </a>
+                </div>
+                <div id="navigation-entry-number" class="PageContestFullView-entryNav-number Grid-col Grid-col--2">
+                    Entry #11
+                </div>
+                <div class="PageContestFullView-entryNav-next Grid-col Grid-col--5 Grid-col--flexContainer">
+                    <a href="/contest/Design-a-K-Pluto-Texture-174787-byentry-5110622.html" id="next-entry"
+                        class="PageContestFullView-entryNav-link
+                        ">
+                        Next
+                            <span class="Icon">
+                                <svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M16.707 7.293l-1.414 1.414L17.586 11H2v2h15.586l-2.293 2.293 1.414 1.413L21.414 12"/>
+</svg>
+
+                            </span>
+                    </a>
+                </div>
+            </div>
+            <div id="fullview-loader" class="PageContestFullView-loaderBackground hide">
+                <div class="Loader Loader--full PageContestFullView--loader"></div>
+            </div>
+        </div>
+        
+        
+            <section id="MessageBoard" class="ContestCommentBoard">
+    <div id="contestViewContainer" class="ContestCommentBoard-inner" data-contest-id="174787">
+        <div class="ContestCommentBoard-container">
+            <h2 class="ContestCommentBoard-header">Public Clarification Board</h2>
+            <ul id="MessagesContainer" class="commentBoard messages-container" >
+                
+            </ul>
+            
+                <p id="no_msgs" class="no-message" data-selector="empty-message">No messages yet.</p>
+            
+            
+        </div>
+
+        <!-- Sidebar //-->
+        <div id="contests-related-container" class="dataList ContestCommentBoard-dataLists contest-related-wrapper">
+        </div>
+    </div>
+</section>
+
+        
+    </div>
+    <div id="contest_popup-container"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </main>
+    </div>
+    <div class="pinky-template">
+                        
+    <footer class="FooterNew">
+        <div class="FooterNew-content">
+            <div class="FooterNew-content-inner">
+                <div class="FooterNew-section">
+                    <div class="Container">
+                        <div class="Grid">
+                            <div class="Grid-col Grid-col--desktopSmall-4">
+                                <div class="FooterNew-info-section">
+                                    <a href="/" class="FooterNew-logo">
+                                                                                    <img class="FooterNew-logo-img"
+                                                src="https://www.f-cdn.com/assets/img/footer/Freelancer-footer-logo-522454d7.svg"
+                                                alt="Freelancer Logo"
+                                            >
+                                                                            </a>
+                                </div>
+                                <div class="FooterNew-info-section">
+                                    <a id="locale-selector" class="FooterNew-subTitle" href="/choose-your-country/" data-robots="LocaleSelector" data-qtsb-section="footer" data-qtsb-subsection="LanguageSelector" data-qtsb-label="GoToLanguageSelector" role="button">
+  <span class="Icon--light Icon FooterNew-subTitle-icon"><svg class="Icon-image" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
+</svg>
+</span>
+      English - Canada
+  </a>
+
+
+
+
+
+
+
+                                </div>
+
+                                <div class="FooterNew-info-section">
+                                    <a href="/support/" class="FooterNew-subTitle"> <span class="Icon--light Icon FooterNew-subTitle-icon"><svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M12 2C6.486 2 2 6.487 2 12c0 5.515 4.486 10 10 10s10-4.485 10-10c0-5.513-4.486-10-10-10zm0 16.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm1-4.375V15h-2v-3h1c1.104 0 2-.897 2-2 0-1.104-.896-2-2-2s-2 .896-2 2H8c0-2.205 1.795-4 4-4s4 1.795 4 4c0 1.86-1.277 3.43-3 3.875z"/>
+</svg>
+</span> Help &amp; Support</a>
+                                </div>
+                            </div>
+                            <div class="Grid-col Grid-col--tablet-3 Grid-col--desktopSmall-2 FooterNew-link-section">
+                                <h5 class="FooterNew-link-title" data-footerLink="footer-link">Freelancer
+                                    <span class="Icon Icon--small Icon--light FooterNew-link-icon FooterNew-link-icon--disable"><svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M12 16c-.3 0-.5-.1-.7-.3l-6-6 1.4-1.4 5.3 5.3 5.3-5.3 1.4 1.4-6 6c-.2.2-.4.3-.7.3z"/>
+</svg>
+</span>
+                                    <span class="Icon Icon--small Icon--light FooterNew-link-icon FooterNew-link-icon--active"><svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8.3a.91.91 0 0 1 .7.3l6 6-1.4 1.4-5.3-5.3L6.7 16l-1.4-1.4 6-6a.91.91 0 0 1 .7-.3z"/></svg>
+</span>
+                                </h5>
+                                <div class="FooterNew-link-content">
+                                    <ul class="FooterNew-links">
+                                        <li>
+                                            <a class="FooterNew-link" href="/job/"
+                                                data-uitest-target="GoToCategories"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToCategories">
+                                                    Categories
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/jobs/"
+                                                data-uitest-target="GoToProjects"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToProjects">
+                                                    Projects
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/contest/"
+                                                data-uitest-target="GoToContest"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToContest">
+                                                    Contests
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/freelancers/"
+                                                data-uitest-target="GoToFreelancers"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToFreelancers">
+                                                    Freelancers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/enterprise"
+                                                data-uitest-target="GoToEnterprise"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Enterprise"
+                                                data-qtsb-label="GoToEnterprise">
+                                                    Enterprise
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/preferred-freelancer-program"
+                                                data-uitest-target="GoToPreferredFreelancerProgram"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToPreferredFreelancerProgram">
+                                                    Preferred Freelancer Program
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/project-management"
+                                                data-uitest-target="GoToProjectManager"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToProjectManager">
+                                                    Project Management
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/local/"
+                                                data-uitest-target="GoToFreelancerLocal"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToFreelancerLocal">
+                                                    Local Jobs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/showcase"
+                                                data-uitest-target="GoToShowcase"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToShowcase">
+                                                    Showcase
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="https://developers.freelancer.com"
+                                                data-uitest-target="GoToAPIDevelopers"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToAPIDevelopers">
+                                                    API for Developers
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="Grid-col Grid-col--tablet-3 Grid-col--desktopSmall-2 FooterNew-link-section">
+                                <h5 class="FooterNew-link-title" data-footerLink="footer-link">About
+                                    <span class="Icon Icon--small Icon--light FooterNew-link-icon FooterNew-link-icon--disable"><svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M12 16c-.3 0-.5-.1-.7-.3l-6-6 1.4-1.4 5.3 5.3 5.3-5.3 1.4 1.4-6 6c-.2.2-.4.3-.7.3z"/>
+</svg>
+</span>
+                                    <span class="Icon Icon--small Icon--light FooterNew-link-icon FooterNew-link-icon--active"><svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8.3a.91.91 0 0 1 .7.3l6 6-1.4 1.4-5.3-5.3L6.7 16l-1.4-1.4 6-6a.91.91 0 0 1 .7-.3z"/></svg>
+</span>
+                                </h5>
+                                <div class="FooterNew-link-content">
+                                    <ul class="FooterNew-links">
+                                        <li>
+                                            <a class="FooterNew-link" href="/about"
+                                                data-uitest-target="GoToAboutUs"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="About"
+                                                data-qtsb-label="GoToAboutUs">
+                                                    About us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/info/how-it-works"
+                                                data-uitest-target="GoToHowItWorks"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="About"
+                                                data-qtsb-label="GoToHowItWorks">
+                                                    How it Works
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/about/security"
+                                                data-uitest-target="GoToSecurity"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="About"
+                                                data-qtsb-label="GoToSecurity">
+                                                    Security
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/investor"
+                                                data-uitest-target="GoToInvestor"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="About"
+                                                data-qtsb-label="GoToInvestor">
+                                                    Investor
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/sitemap"
+                                                data-uitest-target="GoToSitemap"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="Network"
+                                                data-qtsb-label="GoToSitemap">
+                                                    Sitemap
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/about/quotes"
+                                                data-uitest-target="GoToQuotes"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="About"
+                                                data-qtsb-label="GoToQuotes" >
+                                                    Quotes
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="FooterNew-link" href="/about/media"
+                                                data-uitest-target="GoToNews"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="About"
+                                                data-qtsb-label="GoToNews" >
+                                                    News
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="Grid-col Grid-col--tablet-3  Grid-col--desktopSmall-2 FooterNew-link-section">
+                                <h5 class="FooterNew-link-title" data-footerLink="footer-link">Terms
+                                    <span class="Icon Icon--small Icon--light FooterNew-link-icon FooterNew-link-icon--disable"><svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M12 16c-.3 0-.5-.1-.7-.3l-6-6 1.4-1.4 5.3 5.3 5.3-5.3 1.4 1.4-6 6c-.2.2-.4.3-.7.3z"/>
+</svg>
+</span>
+                                    <span class="Icon Icon--small Icon--light FooterNew-link-icon FooterNew-link-icon--active"><svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8.3a.91.91 0 0 1 .7.3l6 6-1.4 1.4-5.3-5.3L6.7 16l-1.4-1.4 6-6a.91.91 0 0 1 .7-.3z"/></svg>
+</span>
+                                </h5>
+                                <div class="FooterNew-link-content">
+                                    <ul class="FooterNew-links">
+                                        <li>
+                                            <a rel="nofollow" class="FooterNew-link" href="/about/privacy"
+                                                data-uitest-target="GoToPrivacyPolicy"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="CorporateLinks"
+                                                data-qtsb-label="GoToPrivacyPolicy">
+                                                    Privacy Policy
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a rel="nofollow" class="FooterNew-link" href="/about/terms"
+                                                data-uitest-target="GoToTermsAndConditions"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="CorporateLinks"
+                                                data-qtsb-label="GoToTermsAndConditions">
+                                                    Terms and Conditions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a rel="nofollow" class="FooterNew-link" href="/dmca/"
+                                                data-uitest-target="GoToCopyrightInfringementPolicy"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="CorporateLinks"
+                                                data-qtsb-label="GoToCopyrightInfringementPolicy">
+                                                    Copyright Policy
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a rel="nofollow" class="FooterNew-link" href="/info/codeofconduct"
+                                                data-uitest-target="GoToCodeOfConduct"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="CorporateLinks"
+                                                data-qtsb-label="GoToCodeOfConduct">
+                                                    Code of Conduct
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a rel="nofollow" class="FooterNew-link" href="/feesandcharges/"
+                                                data-uitest-target="GoToFeesAndCharges"
+                                                data-qtsb-section="footer"
+                                                data-qtsb-subsection="CorporateLinks"
+                                                data-qtsb-label="GoToFeesAndCharges">
+                                                    Fees and Charges
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="Grid-col Grid-col--tablet-3  Grid-col--desktopSmall-2 FooterNew-link-section">
+                                <h5 class="FooterNew-link-title FooterNew-link-title--hideMobile">Apps</h5>
+                                <div class="FooterNew-appStoreIcons">
+                                    <a href="https://bnc.lt/Ed5l/VcovUszaWr"
+                                        class="FooterNew-appStoreIcon"
+                                        target="_blank"
+                                        title="Download on the App Store"
+                                        data-qtsb-section="footer"
+                                        data-qtsb-subsection="AppsAndSocial"
+                                        data-qtsb-label="GoToAppleStore">
+                                            <img class="FooterNew-appStoreIcon-image" src="https://www.f-cdn.com/assets/img/footer/app-store-1f36bbd8.svg" alt="Apple App Store Badge">
+                                    </a>
+                                    <a href="https://bnc.lt/Ed5l/VcovUszaWr"
+                                        class="FooterNew-appStoreIcon"
+                                        target="_blank"
+                                        title="Get it on Google Play"
+                                        data-qtsb-section="footer"
+                                        data-qtsb-subsection="AppsAndSocial"
+                                        data-qtsb-label="GoToPlayStore">
+                                            <img class="FooterNew-appStoreIcon-image" src="https://www.f-cdn.com/assets/img/footer/google-play-66442243.svg" alt="Google Play Store Badge">
+                                    </a>
+                                </div>
+
+                                <div class="FooterNew-social">
+    <a class="FooterNew-social-icon Icon Icon--light" rel="nofollow" href="https://www.facebook.com/fansoffreelancer" target="_blank"  title="Freelancer on Facebook"
+        data-qtsb-section="footer"
+        data-qtsb-subsection="AppsAndSocial"
+        data-qtsb-label="GoToFacebook">
+        <svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M16.41 8.65h-3v-2a.8.8 0 0 1 .84-.91h2.12V2.51h-2.93a3.7 3.7 0 0 0-4 4v2.14H7.59V12h1.87v9.5h3.95V12h2.66l.34-3.35z"/>
+</svg>
+
+    </a>
+    <a class="FooterNew-social-icon Icon Icon--light" rel="nofollow" href="https://www.twitter.com/freelancer" target="_blank" title="Freelancer on Twitter"
+        data-qtsb-section="footer"
+        data-qtsb-subsection="AppsAndSocial"
+        data-qtsb-label="GoToTwitter">
+        <svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.192 21c-2.28 0-4.404-.668-6.192-1.815 2.144.252 4.282-.342 5.98-1.672-1.768-.034-3.26-1.202-3.772-2.806.633.12 1.256.085 1.823-.07-1.942-.39-3.282-2.14-3.24-4.01.545.302 1.17.484 1.83.505C2.822 9.93 2.313 7.555 3.37 5.738c1.992 2.444 4.97 4.053 8.326 4.22C11.106 7.434 13.024 5 15.63 5c1.163 0 2.212.49 2.95 1.276.92-.18 1.785-.517 2.565-.98-.3.944-.942 1.736-1.775 2.235.817-.097 1.596-.314 2.32-.635-.542.807-1.228 1.52-2.016 2.088C19.93 14.665 15.694 21 8.192 21z"/></svg>
+
+    </a>
+    <a class="FooterNew-social-icon Icon Icon--light" rel="nofollow" href="https://plus.google.com/+Freelancer" target="_blank" title="Freelancer on Google Plus"
+        data-qtsb-section="footer"
+        data-qtsb-subsection="AppsAndSocial"
+        data-qtsb-label="GoToGooglePlus">
+        <svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12.5h-3v3h-2v-3h-3v-2h3v-3h2v3h3M7 18.5c-3.87 0-7-3.13-7-7s3.13-7 7-7c1.89 0 3.47.69 4.69 1.83l-1.9 1.83C9.27 7.66 8.36 7.08 7 7.08c-2.39 0-4.34 1.98-4.34 4.42S4.61 15.92 7 15.92c2.77 0 3.81-1.99 3.97-3.02H7v-2.4h6.61c.06.35.11.702.11 1.16 0 4-2.68 6.84-6.72 6.84z"/></svg>
+
+    </a>
+    <a class="FooterNew-social-icon Icon Icon--light" rel="nofollow" href="https://www.youtube.com/freelancerchannel" target="_blank" title="Freelancer on Youtube"
+        data-qtsb-section="footer"
+        data-qtsb-subsection="AppsAndSocial"
+        data-qtsb-label="GoToYoutube">
+        <svg class="Icon-image" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.983 14.66c-.303 0-.562.194-.753.426v-1.988h-.855v6.173h.855v-.348c.236.294.494.407.804.407.564 0 .774-.44.774-1.002v-2.526c0-.618-.205-1.142-.825-1.142zm-.047 3.545c0 .145-.024.25-.073.314-.094.12-.295.115-.434.046l-.2-.16v-2.84l.174-.137c.148-.076.34-.062.442.073.06.08.09.197.09.35v2.352zM11.084 9.25V7.024c0-.263.12-.456.37-.456.274 0 .39.187.39.455V9.25c0 .26-.132.452-.37.452-.248 0-.39-.2-.39-.453zm-1.94 4.745h-.988v5.277h-.954v-5.277h-.987v-.897h2.928v.897zm1.557.722h.848v4.554H10.7v-.5c-.154.183-.317.325-.486.422-.457.26-1.083.256-1.083-.668v-3.807h.847v3.49c0 .185.045.307.226.307.165 0 .395-.212.498-.34v-3.457zM13.507 5.7h.89v3.666c0 .193.045.322.237.322.173 0 .414-.222.523-.358V5.7h.89v4.783h-.89v-.53c-.386.46-.76.598-1.028.598-.477 0-.62-.38-.62-.852V5.7h-.002zm-2.034-.04c.72 0 1.278.537 1.278 1.286V9.29c0 .803-.563 1.28-1.278 1.28-.862 0-1.303-.437-1.303-1.28V6.946c0-.768.518-1.285 1.302-1.285zM7.865 4l.69 2.59L9.198 4h1.018L9.05 7.853v2.63H8.046v-2.63L6.857 4h1.008zm8.918 16.706c-1.822.123-7.746.123-9.566 0C5.245 20.57 5.015 19.376 5 16.25c.015-3.133.247-4.322 2.217-4.458 1.82-.124 7.744-.124 9.566 0 1.972.135 2.202 1.33 2.217 4.457-.015 3.13-.247 4.32-2.217 4.456zm-.05-6.103c-.764 0-1.286.548-1.286 1.338v2.045c0 .82.414 1.41 1.223 1.41.892 0 1.268-.532 1.268-1.41v-.342h-.87v.316c0 .396-.022.636-.38.636-.34 0-.37-.296-.37-.637v-.86h1.62v-1.16c0-.82-.39-1.337-1.204-1.337zm.334 1.792h-.748v-.46c0-.314.064-.534.377-.534.305 0 .37.226.37.534v.46z" fill-rule="evenodd"/></svg>
+
+    </a>
+    <a class="FooterNew-social-icon Icon Icon--light" rel="nofollow" href="https://instagram.com/freelancerofficial" target="_blank" title="Freelancer on Instagram"
+        data-qtsb-section="footer"
+        data-qtsb-subsection="AppsAndSocial"
+        data-qtsb-label="GoToInstagram">
+        <svg class="Icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 12c0 1.657-1.343 3-3 3s-3-1.342-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3zm4.327-3.636c.043.948.052 1.233.052 3.636s-.01 2.688-.053 3.637c-.112 2.42-1.248 3.58-3.69 3.69-.948.042-1.233.052-3.637.052-2.403 0-2.69-.01-3.636-.053-2.446-.11-3.58-1.273-3.69-3.69-.043-.95-.053-1.234-.053-3.637s.01-2.688.054-3.636c.11-2.42 1.248-3.58 3.69-3.69.948-.043 1.233-.052 3.636-.052s2.69.01 3.637.052c2.44.11 3.578 1.27 3.69 3.69zM16.62 12c.002-2.553-2.07-4.622-4.62-4.622-2.553 0-4.622 2.07-4.622 4.622 0 2.553 2.07 4.622 4.622 4.622 2.553 0 4.622-2.07 4.622-4.622zm1.264-4.804c0-.596-.484-1.08-1.08-1.08-.596 0-1.08.484-1.08 1.08 0 .597.483 1.08 1.08 1.08.597 0 1.08-.483 1.08-1.08zM21 12c0-2.444-.01-2.75-.054-3.71-.147-3.265-1.963-5.085-5.235-5.235C14.75 3.01 14.446 3 12 3c-2.445 0-2.75.01-3.71.054-3.27.15-5.085 1.963-5.236 5.235C3.01 9.25 3 9.556 3 12c0 2.445.01 2.75.054 3.71.15 3.27 1.964 5.086 5.236 5.236.96.044 1.265.054 3.71.054 2.445 0 2.75-.01 3.71-.054 3.266-.15 5.09-1.963 5.236-5.236.044-.96.054-1.265.054-3.71z"/></svg>
+
+    </a>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                    <!-- Statistics -->
+                    <div class="FooterNew-section">
+                        <div class="Container">
+    <div class="Grid">
+        <div class="Grid-col Grid-col--3 Grid-col--tablet-6 Grid-col--desktopSmall-3">
+            <div class="SiteStat FooterNew-siteStat">
+                <div id="footerRegisteredUsersCount" class="SiteStat-value FooterNew-siteStat-value">---</div>
+                <div class="SiteStat-name FooterNew-siteStat-name">
+                    <span class="SiteStat-name-text">Registered Users</span>
+                </div>
+            </div>
+        </div>
+        <div class="Grid-col Grid-col--3 Grid-col--tablet-6 Grid-col--desktopSmall-3">
+            <div class="SiteStat FooterNew-siteStat">
+                <div id="footerTotalJobsPostedCount" class="SiteStat-value FooterNew-siteStat-value">---</div>
+                <div class="SiteStat-name FooterNew-siteStat-name">
+                    <span class="SiteStat-name-text">Total Jobs Posted</span>
+                    <button id="posted-listings" class="SiteStat-name-icon" data-content="Jobs Posted (Filtered) is defined as the sum of Total Posted Projects and Total Posted Contests, filtered for spam, advertising, test projects, unawardable or otherwise projects that are deemed bad and unable to be fulfilled.">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="Grid-col Grid-col--desktopSmall-6">
+            <p class="FooterNew-siteStat-term">Freelancer &reg; is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759)</p>
+                            <p class="FooterNew-siteStat-term">Copyright &copy; 2019 Freelancer Technology Pty Limited (ACN 142 189 759)</p>
+                    </div>
+    </div>
+</div>
+
+
+                    </div>
+                
+                
+            </div>
+        </div>
+    </footer>
+    
+
+
+        
+
+        
+    </div>
+
+    <!-- FIXME: please get rid of that, that should be lazy loaded through SystemJS -->
+    
+    <div class="pinky-template">
+        <div class="responsive-modal hide" id="fb_popup">
+    <section class="FacebookSignUpModal modal fb-bs-identifier">
+        <header class="FacebookSignUpModal-header modal-header">
+            <a class="close FacebookSignUpModal-close close-fb-modal-bs" data-dismiss="modal">
+                <span>&times;</span>
+            </a>
+            <h3 id="fb_login_welcome" class="FacebookSignUpModal-heading">
+                Welcome, <span class ="fb_fullname"></span>!
+                <span id="fb_login_status">Processing &hellip;</span>
+            </h3>
+            <h3 id="fb_signup_welcome" class="FacebookSignUpModal-heading" style="display: none">
+                Welcome <span class ="fb_fullname"></span>!
+            </h3>
+            <h3 id="fb_link_welcome" class="FacebookSignUpModal-heading" style="display: none">
+                Link to existing Freelancer account
+            </h3>
+            <div id="fb_error_title" class="FacebookSignUpModal-heading" style="display: none"></div>
+
+            <!-- Profile Image -->
+            <div class="FacebookSignUpModal-avatar">
+                <div id="fb_profile_pic" class="FacebookSignUpModal-avatarImage ImageThumbnail fb_div" style="display:none"> </div>
+            </div>
+        </header>
+
+        <div class="modal-body" id="fb-modal-body">
+            <div class="FacebookSignUpModal-content">
+                <div id="fb_loading" class="FacebookSignUpModal-loader Loader Loader--full"></div>
+
+                <!-- Link To Existing Account -->
+                <form id="fb_link" class="FacebookSignUpModal-form fl-form" style="display:none">
+                    <div class="form-step">
+                        <div id="fb_email_already_linked">
+                            <p>
+                              The email address <span id="fb_link_email"></span> is already associated with a Freelancer account.
+                              <span>Enter your password below to link accounts:</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <label>Username:</label>
+                        <div id="fb_link_user_display"></div>
+                    </div>
+                    <div class="form-step">
+                        <input id='fb_link_user' type="hidden">
+                        <label for="fb_link_passwd">Password:</label>
+                        <input type="password" class="fb_passwd inline-error FacebookSignUpModal-input default-input"
+                               id="fb_link_passwd" placeholder="">
+                        <p>
+                            <a href="#" id="fb_forgot_password_btn">
+                                <small>I forgot my password</small>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="link-account-error alert alert-error" style="display:none"></div>
+                    <div class="form-step">
+                        <button id="fb_link_btn" type="button" value="Submit"
+                                class="fbLinkBtn btn btn-info FacebookSignUpModal-ctaButton">
+                            Link Accounts
+                        </button>
+                        <div class="FacebookSignUpModal-loader Loader Loader--full fb_submit_loading" style="display:none;" ></div>
+                    </div>
+                </form>
+
+                <!-- Error -->
+                <div id="fb_error_div" style="display:none">
+                    <div id="fb_error_content">
+                    </div>
+                    <button class="fbCloseBtn btn FacebookSignUpModal-ctaButton">Close</button>
+                </div>
+
+                <div id="signupRadioBtns" class="hide">
+                    <!-- User Type Selectors -->
+                    <div class="user_type FacebookSignUpModal-method" data-toggle="buttons-radio">
+                        <label class="FacebookSignUpModal-radio">
+                            <input type="radio" id="fb_signup_btn" name="connect_type" value="fb_signup" checked='checked'>I am a new user
+                        </label>
+                        <label class="FacebookSignUpModal-radio">
+                            <input type="radio" id="fb_login_btn" name="connect_type" value="fb_login">I am a returning user
+                        </label>
+                    </div>
+
+                    <!-- New User Signup -->
+                    <form id="fb_signup" class="FacebookSignUpModal-form connect_div fb_div fl-form" style="display:none">
+                        <p>Link your account to a new Freelancer account</p>
+                        <div id="fb_email_div" class="form-step">
+                            <label for="fb_email">Email address</label>
+                            <div id="fb_email"></div>
+                        </div>
+                        <div id="fb_email_input_div" class="form-step is-hidden">
+                            <label for="fb_email_input">Email address</label>
+                            <input id="fb_email_input" class="FacebookSignUpModal-input default-input" type="text" value="">
+                            <div class="form-alert" id="chk_valid_email"></div>
+                        </div>
+                        <div class="form-step control-group">
+                            <label for="fb_user">
+                              Username
+                            </label>
+                            <input id="fb_user" class="FacebookSignUpModal-input default-input" type="text" value="">
+                            <div class="form-alert" id="chk_username_exist">Valid username</div>
+                            <input type="hidden" id="fb_currency">
+                            <input type="hidden" id="fb_timezone">
+                        </div>
+                        <div class="form-step control-group">
+                            <label id="fb_looking_for_label" class="control-label">I am looking to</label>
+                            <div class="FacebookSignUpModal-radioButtonGroup button-group" data-toggle="buttons-radio"
+                                 data-default="
+                                 none">
+                                <label class="FacebookSignUpModal-lookingForButton btn">
+                                    <input type="radio" name="looking_for" id="fb_looking_to_hire"
+                                           value="Employer" class="required FacebookSignUpModal-radio">Hire
+                                </label>
+                                <label class="FacebookSignUpModal-lookingForButton btn">
+                                    <input type="radio" name="looking_for" id="fb_looking_for_work"
+                                           class="FacebookSignUpModal-radio" value="Worker">Work
+                                </label>
+                            </div>
+                        </div>
+                        <button id="fbSignupBtn" type="submit" value="Submit"
+                                class="btn btn-info FacebookSignUpModal-ctaButton">Create Account</button>
+                        
+                        <div class="FacebookSignUpModal-loader Loader Loader--full fb_submit_loading" style="display:none;" ></div>
+                    </form>
+
+                    <!-- User Login -->
+                    <form id="fb_login" class="FacebookSignUpModal-form connect_div fb_div fl-form" style="display:none">
+                        <p>Link to your existing Freelancer account</p>
+                        <div id="fb-returning-user-fields">
+                            <div id="fb-return-user-username-field" class="form-step">
+                                <label for="fb_login_user">Username or Email</label>
+                                <input id="fb_login_user" class="FacebookSignUpModal-input default-input" type="text">
+                            </div>
+                            <div class="form-step">
+                                <label for="fb_login_passwd">Password</label>
+                                <input id="fb_login_passwd" class="FacebookSignUpModal-input default-input" type="password">
+                                <a class="FacebookSignUpModal-forgotPassword" href="#"
+                                   onclick='window.open("/users/forgot.php","","width=500, height=450, left=100,top=100,menu=no, toolbar=no,scrollbars=yes,resizable=yes");return false;'>
+                                   I forgot my password
+                                </a>
+                            </div>
+                        </div>
+                        <div class="link-account-error alert alert-danger" style="display:none"></div>
+                        <button type="button" id="fb_link_account_btn" value="Submit"
+                                class="fbLinkBtn btn btn-info FacebookSignUpModal-ctaButton">Link Accounts</button>
+                        <div class="FacebookSignUpModal-loader Loader Loader--full fb_submit_loading" style="display:none;" ></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="facebookConnect-backdrop" class="modal-backdrop"></div>
+</div>
+<!-- Necessary for Forgot Password modal -->
+<div id="facebook-loginsignup-container"></div>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    <fl-modal-container class="pinky-template"></fl-modal-container>
+
+    <!-- JS SDKs: think twice before adding something here -->
+    <!-- SHOULD NEVER EVER include synchronous scripts. -->
+    <!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+    ga('create', 'UA-223765-6', 'auto');
+
+    // Set User ID if exist
+    
+
+    // ga('require', 'displayfeatures');
+    // This is to differentiate different links to the same page - one in nav bar, one in side bar
+    // ga('require', 'linkid', 'linkid.js');
+
+    // This is page group like tags, PVP, CVP, Profiles
+    
+    // This is domain group
+    
+        ga('set', 'contentGroup2', 'freelancer.ca');
+    
+
+    // Use canonical URL as the url of the page if exist
+    
+        ga('set', 'location', '/contest/Design-a-K-Pluto-Texture-174787-byentry-5115878.html');
+    
+
+    // Gets cookie for `event` and sends it if exist
+    const gaCookies = document.cookie.split(';');
+    for (let cookie of gaCookies) {
+        cookie = cookie.trim();
+        const [gaKey, gaRawData] = cookie.split('=');
+        if (gaKey === 'gaevent' && gaRawData) {
+            const gaData = decodeURIComponent(gaRawData);
+            const gaEventData = JSON.parse(gaData.replace(/\+/g, ' '));
+            gaEventData.forEach(event => {
+                event.hitType = 'event';
+                ga('send', event);
+            });
+            document.cookie = 'gaevent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'
+            break;
+        }
+    };
+
+    // Send Pageview after everything is set
+    ga('send', 'pageview');
+
+
+</script>
+<!-- End Google Analytics -->
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-G7FX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-G7FX');</script>
+<!-- End Google Tag Manager -->
+    <!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+    _atrk_opts = {
+          atrk_acct: '+QLxh1acBa0089',
+          domain: 'freelancer.com',
+          dynamic: true
+    };
+    (function() {
+        var as = document.createElement('script');
+        as.type = 'text/javascript';
+        as.async = true;
+        as.src = 'https://d31qbv1cthcecs.cloudfront.net/atrk.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(as, s);
+    })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=+QLxh1acBa0089"
+    style="display:none" height="1" width="1" alt=""/></noscript>
+<!-- End Alexa Certify Javascript -->
+    
+
+    <!-- GLOBAL page data: for vars shared amongst multiple modules -->
+    <!-- KEEP THEIR NUMBER AS FEW AS POSSIBLE -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- GLOBAL SystemJS modules: only the *really* global modules go there  -->
+    <!-- KEEP THEIR NUMBER AS FEW AS POSSIBLE -->
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- SystemJS  -->
+<script defer src="https://www.f-cdn.com/assets/polyfills-dd3bd39c.js"></script>
+
+<link rel="preload" href="https://www.f-cdn.com/assets/webapp-compat/freelancer-tracking-tracking-module-ngfactory.d8f9f0cc92870312c875.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/webapp-compat/compat-compat-modals-module-ngfactory.c8533d98b61e7a9d0ba2.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/webapp-compat/compat-compat-abtest-module-ngfactory.67093121c3f77b6f6d5a.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/webapp-compat/compat-compat-threatmetrix-module-ngfactory.83cba228fbe0c8e037f9.js" as="script">
+<script defer src="https://www.f-cdn.com/assets/webapp-compat/runtime.619cffb94bec361fb013.js"></script>
+<script defer src="https://www.f-cdn.com/assets/webapp-compat/main.70166ed0925f0aedf54d.js"></script>
+
+<script defer id="systemjs-loader" src="https://www.f-cdn.com/assets/systemjs-83712958.js"></script>
+<script defer id="systemjs-config" src="https://www.f-cdn.com/assets/systemjs-config-9bda191a.js"></script>
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/login-signup-angular-cc92b7e0.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/angular-sanitize-8f49795b.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/angular-e7a75f9c.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/angular-route-518dc584.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/jquery-5c8e45ce.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/angular-resource-faa6ca92.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/angular-messages-b2419f10.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/text-to-post-b48dbabf.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/contest-fullview-2e86152e.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/video-js-b602193f.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/jquery-star-rating-e9a7a970.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/slick-carousel-b93c076a.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/bootstrap-497766ca.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/jquery-validate-76aceece.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/underscore-c3514df3.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/footer-locale-selector-4b977d83.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/footer-site-stats-a2368184.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/web-animations-js-5d7c186c.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/footer-new-553b1b42.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/tracking-d7501b5d.js" as="script">
+<link rel="preload" href="https://www.f-cdn.com/assets/bundles/modules/gdpr-consent-d3ed481c.js" as="script">
+<script>
+document.getElementById('systemjs-loader').addEventListener('load', function() {
+  System.config({
+    baseURL: "https:\/\/www.f-cdn.com" + "/assets"
+  });
+  window.define = SystemJS.amdDefine;
+  window.require = window.requirejs = SystemJS.amdRequire;
+  System.config({
+    packages: {
+      bundles: {
+        meta: {
+          "*": {
+            scriptLoad: true
+          }
+        }
+      }
+    }
+  });
+  if (window.performance && window.performance.mark) {
+    window.performance.mark('systemjs_loader_ready');
+  }
+});
+
+document.getElementById('systemjs-config').addEventListener('load', function() {
+  if (window.performance && window.performance.mark) {
+    window.performance.mark('systemjs_config_ready');
+  }
+
+  System.register(
+    'server-data/login-signup-angular', [], function(__export) {
+            var showSignup;
+      var redirectUrl;
+      var isLoggedOutHeader;
+      return {
+        setters: [],
+        execute: function() {
+                    __export('showSignup', null);
+          __export('redirectUrl', null);
+          __export('isLoggedOutHeader', true);
+          }
+      };
+    }
+  );
+  System.register(
+    'server-data/text-to-posts', [], function(__export) {
+            var isContest;
+      return {
+        setters: [],
+        execute: function() {
+                    __export('isContest', null);
+          }
+      };
+    }
+  );
+  System.register(
+    'server-data/contest-fullview', [], function(__export) {
+            var user;
+      var contest;
+      var contestId;
+      var entry;
+      var entryId;
+      var siteUrl;
+      var isLoggedIn;
+      var isEntryLiked;
+      var loginUrl;
+      var messagesData;
+      var infractionTypes;
+      return {
+        setters: [],
+        execute: function() {
+                    __export('user', {"id":null,"profilePic":"https:\/\/www.fi.freelancer.com\/img\/unknown.png","isAuUser":false,"taxName":""});
+          __export('contest', {"id":"174787","name":"Design a 4K Pluto Texture","contestHolderId":1920429,"isContestHolder":false,"hasEntryWinner":true,"prize":50,"prizeFormatted":"$50","isImage":true,"isVideo":false,"isText":false,"isFreemium":false,"currency":{"id":1,"sign":"$","code":"USD"},"upgrades":{"guaranteed":true,"featured":false,"topContest":false,"highlight":false,"sealed":false,"private":false,"urgent":false,"nda":false}});
+          __export('contestId', 174787);
+          __export('entry', {"id":5115878,"userId":13168736,"files":[{"thumb_name":"55056c18a4a69_thumb.jpg","pathFile":"174787\/13168736","s3path":"https:\/\/s3.amazonaws.com\/freelancer-contest-entries.freelancer.com\/174787\/13168736\/","path":"https:\/\/cdn5.f-cdn.com\/contestentries\/174787\/13168736\/","thumb":"https:\/\/cdn3.f-cdn.com\/contestentries\/174787\/13168736\/55056c18a4a69_thumb.jpg","thumb80":"https:\/\/cdn6.f-cdn.com\/contestentries\/174787\/13168736\/55056c18a4a69_thumb80.jpg","thumb420":"https:\/\/cdn6.f-cdn.com\/contestentries\/174787\/13168736\/55056c18a4a69_thumb420.jpg","thumb900":"https:\/\/cdn2.f-cdn.com\/contestentries\/174787\/13168736\/55056c18a4a69_thumb900.jpg","thumb80fix":"https:\/\/cdn2.f-cdn.com\/contestentries\/174787\/13168736\/55056c18a4a69_thumb80fix.jpg","digest_email_thumb":"https:\/\/cdn2.f-cdn.com\/contestentries\/174787\/13168736\/55056c18a4a69_digest.jpg","thumbCard":"https:\/\/cdn6.f-cdn.com\/contestentries\/174787\/13168736\/55056c18a4a69_thumbCard.jpg","file_id":"5119466"}],"nextEntry":{"hasUrl":true,"url":"\/contest\/Design-a-K-Pluto-Texture-174787-byentry-5110622.html","id":"5110622"},"prevEntry":{"hasUrl":true,"url":"\/contest\/Design-a-K-Pluto-Texture-174787-byentry-5109332.html","id":"5109332"},"rating":3,"numLikes":0,"username":"alexry","publicUserName":"alexry","number":11,"thumb420":"https:\/\/cdn6.f-cdn.com\/contestentries\/174787\/13168736\/55056c18a4a69_thumb420.jpg","sellPrice":50,"pathFile":"174787\/13168736","name":"55056c18a4a69.jpg","restrictLike":false});
+          __export('entryId', 5115878);
+          __export('siteUrl', "https:\/\/www.freelancer.ca");
+          __export('isLoggedIn', false);
+          __export('isEntryLiked', false);
+          __export('loginUrl', "https:\/\/www.freelancer.ca\/login?goto=MjNlOTA1OGZlNjZlYTJiMWViMGEzYWYwZjNkM2ZjN2ZodHRwczovL3d3dy5mcmVlbGFuY2VyLmNhL2NvbnRlc3QvRGVzaWduLWEtSy1QbHV0by1UZXh0dXJlLTE3NDc4Ny1ieWVudHJ5LTUxMTU4Nzg,");
+          __export('messagesData', []);
+          __export('infractionTypes', [{"id":"1","type":"They have requested payment outside of Freelancer.com","is_extreme_default":"0"},{"id":"2","type":"They have requested communication to be moved offsite","is_extreme_default":"0"},{"id":"3","type":"They are publicly displaying their contact information","is_extreme_default":"0"},{"id":"4","type":"Their profile is fake","is_extreme_default":"0"},{"id":"5","type":"They have been misleading about their ability","is_extreme_default":"0"},{"id":"6","type":"There is misleading content on their profile","is_extreme_default":"0"},{"id":"7","type":"This is an organisation, not a person","is_extreme_default":"0"},{"id":"8","type":"They have made threats of violence","is_extreme_default":"1"},{"id":"9","type":"They have been using inappropriate language","is_extreme_default":"0"},{"id":"10","type":"An issue about a project between this person and me","is_extreme_default":"0"},{"id":"11","type":"An issue about a project this person has worked on with someone else","is_extreme_default":"0"},{"id":"12","type":"Other","is_extreme_default":"0"},{"id":"13","type":"They copied my work","is_extreme_default":"0"},{"id":"14","type":"They copied work from another source","is_extreme_default":"0"},{"id":"15","type":"Submitted work with explicit or inappropriate content","is_extreme_default":"0"},{"id":"16","type":"Low-quality work","is_extreme_default":"0"},{"id":"17","type":"Work does not match requirements","is_extreme_default":"0"}]);
+          }
+      };
+    }
+  );
+  System.register(
+    'server-data/footer-locale-selector', [], function(__export) {
+            var isAuth;
+      var currentRegion;
+      var currentDomain;
+      var currentLanguage;
+      return {
+        setters: [],
+        execute: function() {
+                    __export('isAuth', "");
+          __export('currentRegion', "North America");
+          __export('currentDomain', "Canada");
+          __export('currentLanguage', "English");
+          }
+      };
+    }
+  );
+  System.register(
+    'server-data/flconfigs', [], function(__export) {
+            var sslBaseUrl;
+      var cookieBase;
+      var notifyServer;
+      var flnBillingBaseUrl;
+      var languageCode;
+      var cookieDomain;
+      var siteName;
+      var cdnUrls;
+      var facebookAppId;
+      var enterprise;
+      var userJobs;
+      var messagingABTests;
+      var globalMatchmakingABTests;
+      var recaptchaPublicKey;
+      return {
+        setters: [],
+        execute: function() {
+                    __export('sslBaseUrl', "https:\/\/www.freelancer.ca");
+          __export('cookieBase', "GETAFREE");
+          __export('notifyServer', "\/\/notifications.freelancer.com");
+          __export('flnBillingBaseUrl', "https:\/\/api.freelancerbilling.com");
+          __export('languageCode', "en");
+          __export('cookieDomain', ".freelancer.ca");
+          __export('siteName', "freelancer.ca");
+          __export('cdnUrls', ["cdn2.f-cdn.com","cdn3.f-cdn.com","cdn5.f-cdn.com","cdn6.f-cdn.com"]);
+          __export('facebookAppId', "120131118061981");
+          __export('enterprise', null);
+          __export('userJobs', null);
+          __export('messagingABTests', []);
+          __export('globalMatchmakingABTests', []);
+          __export('recaptchaPublicKey', "6Lc1CCcTAAAAABxlulYmWJj_ZNAHHegrhLV3vS2Z");
+          }
+      };
+    }
+  );
+  System.register(
+    'server-data/tracking', [], function(__export) {
+            var qtsHttpEndpoint;
+      return {
+        setters: [],
+        execute: function() {
+                    __export('qtsHttpEndpoint', "\/\/t.freelancer.com\/");
+          }
+      };
+    }
+  );
+
+  System.register(
+    'angular-server-data/flconfigs',
+    ['angular'],
+    function(__export) {
+      var angular;
+      var messagingABTests;
+      var globalMatchmakingABTests;
+      return {
+        setters: [
+          function(ng) {
+            angular = ng.default;
+          }
+        ],
+        execute: function() {
+          angular.module('flconfigs/messagingABTests', []).constant(
+              'messagingABTests', []
+            );
+            __export('messagingABTests', 'flconfigs/messagingABTests');
+          angular.module('flconfigs/globalMatchmakingABTests', []).constant(
+              'globalMatchmakingABTests', []
+            );
+            __export('globalMatchmakingABTests', 'flconfigs/globalMatchmakingABTests');
+          }
+      };
+    }
+  );
+
+  System.import('modules/login-signup-angular');
+  System.import('modules/text-to-post');
+  System.import('modules/contest-fullview');
+  System.import('modules/footer-locale-selector');
+  System.import('modules/footer-site-stats');
+  System.import('modules/footer-new');
+  System.import('modules/tracking');
+  System.import('modules/gdpr-consent');
+});
+</script>
+
+<!--// SystemJS  -->
+
+
+</body>
+</html>
